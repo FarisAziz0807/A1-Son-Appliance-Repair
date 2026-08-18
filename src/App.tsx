@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
-import { TrustStats } from './components/TrustStats';
-import { ServicesSection } from './components/ServicesSection';
-import { ApplianceTypes } from './components/ApplianceTypes';
-import { SymptomDiagnosticTool } from './components/SymptomDiagnosticTool';
-import { WhyChooseUs } from './components/WhyChooseUs';
 import { AboutSection } from './components/AboutSection';
+import { ServicesSection } from './components/ServicesSection';
+import { WhyChooseUs } from './components/WhyChooseUs';
 import { HowItWorks } from './components/HowItWorks';
+import { TrustStats } from './components/TrustStats';
+import { SymptomDiagnosticTool } from './components/SymptomDiagnosticTool';
 import { EmergencyCTA } from './components/EmergencyCTA';
 import { GallerySection } from './components/GallerySection';
 import { ReviewsSection } from './components/ReviewsSection';
@@ -39,58 +38,55 @@ export default function App() {
       {/* Sticky Navigation Header */}
       <Header onOpenBooking={() => handleOpenBooking()} />
 
-      {/* Main Content Sections */}
+      {/* Main Content Sections in Requested Order */}
       <main className="flex-1">
-        {/* 1. Hero Section with Automatic Slider & Direct CTAs */}
+        {/* 1. Hero Section */}
         <Hero onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 2. Trust Indicators & Animated Counter Stats */}
-        <TrustStats />
+        {/* 2. About Us Section */}
+        <AboutSection onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 3. 10 Detailed Appliance Repair Services with Category Filters */}
+        {/* 3. Services Section */}
         <ServicesSection 
           onSelectService={handleSelectService}
           onOpenBooking={() => handleOpenBooking()}
         />
 
-        {/* 4. Appliance Types Section (9 Categories & Brands) */}
-        <ApplianceTypes onOpenBooking={() => handleOpenBooking()} />
-
-        {/* 5. Interactive Appliance Symptom Diagnostic Tool */}
-        <SymptomDiagnosticTool onOpenBooking={() => handleOpenBooking()} />
-
-        {/* 6. Why Choose A1 & Son Section (8 Value Pillars) */}
+        {/* 4. Why Choose Us Section */}
         <WhyChooseUs onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 7. Authentic Local About Section */}
-        <AboutSection onOpenBooking={() => handleOpenBooking()} />
-
-        {/* 8. Simple 4-Step Process (How It Works) */}
+        {/* 5. How It Works (Its Work) Section */}
         <HowItWorks onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 9. High-Conversion Emergency CTA Banner */}
+        {/* 6. Trust & Experience Stats */}
+        <TrustStats />
+
+        {/* 7. Interactive Symptom Diagnostic Tool */}
+        <SymptomDiagnosticTool onOpenBooking={() => handleOpenBooking()} />
+
+        {/* 8. Emergency Repair Dispatch CTA */}
         <EmergencyCTA onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 10. 20+ Image Masonry Gallery with Lightbox */}
+        {/* 9. Real Work Gallery Showcase */}
         <GallerySection />
 
-        {/* 11. Customer Reviews & 4.4/5 Google Rating Showcase */}
+        {/* 10. Verified Customer Reviews & Ratings */}
         <ReviewsSection />
 
-        {/* 12. Local SEO Service Area & Map Section (115 SW 155th St Burien WA) */}
+        {/* 11. Burien & King County Service Area Map */}
         <ServiceAreaSection />
 
-        {/* 13. Searchable Accordion FAQ Section */}
+        {/* 12. Frequently Asked Questions */}
         <FAQSection onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 14. Contact Section with Service Request Form */}
+        {/* 13. Direct Contact & Booking Form */}
         <ContactSection />
       </main>
 
       {/* Multi-Column Professional Footer */}
       <Footer />
 
-      {/* Floating Action Triggers (Call, WhatsApp, Booking) */}
+      {/* Floating Action Triggers (Call & Booking) */}
       <FloatingCTAs onOpenBooking={() => handleOpenBooking()} />
 
       {/* Modals */}
