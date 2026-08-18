@@ -16,13 +16,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 bg-slate-100">
               <img
-                src="https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp"
-                alt="A1 & Son Appliance Repair technician diagnosing household appliance in Burien WA"
+                src="/images/about/about-team.jpg"
+                alt="A1 & Son Appliance Repair certified technician with tools and equipment in Burien WA"
                 className="w-full h-[460px] object-cover"
                 loading="lazy"
                 referrerPolicy="no-referrer"
                 onError={(e) => {
-                  e.currentTarget.src = '/images/services/refrigerator-repair.jpg';
+                  e.currentTarget.src = '/images/about/about-technician.jpg';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />

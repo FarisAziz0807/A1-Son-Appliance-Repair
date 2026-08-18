@@ -10,8 +10,8 @@ const HERO_SLIDES = [
   {
     id: 1,
     serviceId: 'refrigerator-repair',
-    image: 'https://www.smartappliance.co.za/wp-content/uploads/2022/11/fridge-2-1024x683.webp',
-    fallback: '/images/services/refrigerator-repair.jpg',
+    image: '/images/services/refrigerator-repair.jpg',
+    fallback: '/images/services/smartappliance-fridge.webp',
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'Cooling Specialist',
     caption: 'Compressor diagnostics, refrigerant recharge & cold airflow recovery.'
@@ -19,7 +19,7 @@ const HERO_SLIDES = [
   {
     id: 2,
     serviceId: 'freezer-repair',
-    image: 'https://cloudfrontgharpediabucket.gharpedia.com/uploads/2024/11/Complex-Repairs-08-0706140003.jpg',
+    image: '/images/services/freezer-repair.jpg',
     fallback: '/images/services/freezer-repair.jpg',
     title: 'Freezer & Deep Freeze Precision Repair',
     category: 'Freezer Mechanics',
@@ -28,7 +28,7 @@ const HERO_SLIDES = [
   {
     id: 3,
     serviceId: 'dryer-repair',
-    image: 'https://uaebusinessman.com/wp-content/uploads/2025/09/How-to-Fix-Dryer-With-No-Power-Supply-1024x684.webp',
+    image: '/images/services/dryer-repair.webp',
     fallback: '/images/services/dryer-repair.webp',
     title: 'Dryer Heating & Tumble Drive Repair',
     category: 'Laundry Specialists',
@@ -37,7 +37,7 @@ const HERO_SLIDES = [
   {
     id: 4,
     serviceId: 'oven-repair',
-    image: 'https://fixappliance.co.uk/wp-content/uploads/2025/08/Electric-Oven-Repair.jpg',
+    image: '/images/services/oven-repair.jpg',
     fallback: '/images/services/oven-repair.jpg',
     title: 'Electric & Gas Oven Calibration',
     category: 'Cooking Systems',
@@ -46,7 +46,7 @@ const HERO_SLIDES = [
   {
     id: 5,
     serviceId: 'stove-cooktop-repair',
-    image: 'https://www.glbrain.com/images/tools/80/3a/69d3520856cb12f99dd6c2368b083a80_xxbig.jpg',
+    image: '/images/services/stove-cooktop-repair.jpg',
     fallback: '/images/services/stove-cooktop-repair.jpg',
     title: 'Stove & Cooktop Burner & Igniter Fix',
     category: 'Range Mechanics',
@@ -55,7 +55,7 @@ const HERO_SLIDES = [
   {
     id: 6,
     serviceId: 'washer-repair',
-    image: 'https://blog.aham.org/wp-content/uploads/2026/03/appliance-repair-1024x683.jpg',
+    image: '/images/services/washer-repair.jpg',
     fallback: '/images/services/washer-repair.jpg',
     title: 'Washing Machine Pump & Motor Repair',
     category: 'Laundry Specialists',
@@ -64,7 +64,7 @@ const HERO_SLIDES = [
   {
     id: 7,
     serviceId: 'lg-compressor-replacement',
-    image: 'https://guide-images.cdn.ifixit.com/igi/fDeZjPFBpZXrLuTI.medium',
+    image: '/images/services/lg-compressor.jpg',
     fallback: '/images/services/lg-compressor.jpg',
     title: 'LG Refrigerator Compressor Replacement',
     category: 'Certified Specialty',
