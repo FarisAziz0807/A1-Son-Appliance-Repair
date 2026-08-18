@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoAsset from '../assets/logo.png';
+import logoAsset from '../assets/images/site_logo_1787079462987.jpg';
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl';
