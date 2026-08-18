@@ -32,7 +32,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Evaporator fan motor and condenser fan replacements'
     ],
     commonProblems: ['Not cooling', 'Water pooling underneath', 'Clicking noise from back', 'Ice buildup on coils', 'Ice maker not working'],
-    image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
     badge: 'High Priority Service'
   },
   {
@@ -47,22 +47,8 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Relay starter, capacitor, and inverter board diagnostics'
     ],
     commonProblems: ['Thawing food', 'Heavy frost on back wall', 'Continuous running motor', 'Clicking starter relay'],
-    image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://cloudfrontgharpediabucket.gharpedia.com/uploads/2024/11/Complex-Repairs-08-0706140003.jpg',
     badge: 'Fast Emergency Response'
-  },
-  {
-    id: 'refrigerator-freezer-repair',
-    title: 'Refrigerator & Freezer Repair',
-    category: 'Refrigeration',
-    description: 'Comprehensive combination refrigerator/freezer diagnosis. We tackle dual-evaporator systems, French-door models, side-by-side configurations, and built-in architectural units.',
-    detailedPoints: [
-      'Dual-zone airflow damper control troubleshooting',
-      'Main PCB power module and electronic inverter repair',
-      'Internal water filter manifold and dispenser valve fixes',
-      'Precision Freon leak detection and factory-grade sealed system work'
-    ],
-    commonProblems: ['Freezer works but fridge is warm', 'Freezer too cold', 'Water leaking into crisper drawer', 'Error codes on display'],
-    image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'dryer-repair',
@@ -76,7 +62,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Exhaust airflow safety inspection and lint duct checks'
     ],
     commonProblems: ['No heat while tumbling', 'Drum will not spin', 'Takes 2-3 cycles to dry', 'Squealing/grinding noise', 'Dryer won’t turn on'],
-    image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80',
+    image: 'https://uaebusinessman.com/wp-content/uploads/2025/09/How-to-Fix-Dryer-With-No-Power-Supply-1024x684.webp',
     badge: 'Safety Inspected'
   },
   {
@@ -91,7 +77,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Door hinge springs, latch assemblies, and door glass seal replacement'
     ],
     commonProblems: ['Oven not heating up', 'Gas smell near oven', 'Inaccurate temperature', 'Self-clean latch stuck', 'Uneven baking results'],
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80'
+    image: 'https://fixappliance.co.uk/wp-content/uploads/2025/08/Electric-Oven-Repair.jpg'
   },
   {
     id: 'stove-cooktop-repair',
@@ -105,7 +91,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Induction power board and touch-sensor glass diagnosis'
     ],
     commonProblems: ['Burner clicking constantly', 'Electric element won’t heat', 'Glass top hot-surface indicator stays on', 'Low gas flame'],
-    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80'
+    image: 'https://www.glbrain.com/images/tools/80/3a/69d3520856cb12f99dd6c2368b083a80_xxbig.jpg'
   },
   {
     id: 'washer-repair',
@@ -119,22 +105,8 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Door boot gasket seal sanitization and leak prevention'
     ],
     commonProblems: ['Washing machine won’t drain', 'Violent shaking on spin cycle', 'Water leaking onto laundry room floor', 'Door locked shut', 'Clothes soaking wet after cycle'],
-    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80',
+    image: 'https://blog.aham.org/wp-content/uploads/2026/03/appliance-repair-1024x683.jpg',
     badge: 'Same-Day Availability'
-  },
-  {
-    id: 'washer-dryer-repair',
-    title: 'Washer & Dryer Repair',
-    category: 'Laundry',
-    description: 'Complete all-in-one laundry suite troubleshooting, maintenance, and paired tune-ups for stacked units, commercial-grade home laundry, and smart laundry pairs.',
-    detailedPoints: [
-      'Comprehensive dual-machine diagnostic visit savings',
-      'Stacked tower wiring, vent linkage, and mounting integrity',
-      'Drive motor and transmission overhaul',
-      'Complete mechanical and electronic safety tune-ups'
-    ],
-    commonProblems: ['Paired system power dropouts', 'Matching error codes', 'Stacked unit excessive vibration', 'Electrical breaker tripping'],
-    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'lg-compressor-replacement',
@@ -148,24 +120,8 @@ export const SERVICES_LIST: ServiceItem[] = [
       'R134a / R600a precision weigh-in refrigerant recharging'
     ],
     commonProblems: ['LG linear compressor failure', 'Humming noise then silence', 'Freezer at 40°F and fridge at 60°F', 'LG error codes 22 or 67'],
-    image: 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80',
+    image: 'https://guide-images.cdn.ifixit.com/igi/fDeZjPFBpZXrLuTI.medium',
     badge: 'Certified Specialty Service',
-    isSpecialty: true
-  },
-  {
-    id: 'sub-zero-service',
-    title: 'Sub-Zero Refrigeration Service',
-    category: 'Specialty',
-    description: 'Dedicated professional service for luxury Sub-Zero built-in, integrated, and column refrigeration systems. Expert handling of dual-compressor architectures and precision microprocessor controls.',
-    detailedPoints: [
-      'Dual-compressor system balancing (dedicated fridge & freezer circuits)',
-      'Sub-Zero condenser coil deep cleaning and high-temp vacuum service',
-      'Microprocessor controller board diagnostics and sensor testing',
-      'Sub-Zero vacuum relief valves, door hinge cams, and magnet seals'
-    ],
-    commonProblems: ['Service light blinking on Sub-Zero panel', 'Vacuum condenser light on', 'Frost in freezer section', 'Temperature drifting higher'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-    badge: 'Luxury Appliance Specialist',
     isSpecialty: true
   }
 ];
@@ -174,250 +130,118 @@ export const APPLIANCE_TYPES: ApplianceType[] = [
   {
     id: 'refrigerators',
     name: 'Refrigerators',
-    image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=600&q=80',
+    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
     description: 'French door, side-by-side, bottom freezer, top mount, compact, and counter-depth models.',
     features: ['Cooling issues', 'Water leaks', 'Ice makers', 'Thermostat faults']
   },
   {
     id: 'freezers',
     name: 'Freezers',
-    image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=600&q=80',
+    image: 'https://cloudfrontgharpediabucket.gharpedia.com/uploads/2024/11/Complex-Repairs-08-0706140003.jpg',
     description: 'Upright freezers, deep chest freezers, and built-in architectural freezer units.',
     features: ['Excess frost', 'Thawing', 'Starter relays', 'Door gaskets']
   },
   {
     id: 'washing-machines',
     name: 'Washing Machines',
-    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=600&q=80',
+    image: 'https://blog.aham.org/wp-content/uploads/2026/03/appliance-repair-1024x683.jpg',
     description: 'Front load, top load with agitator, high-efficiency impellers, and all-in-one laundry units.',
     features: ['Drain pumps', 'Spin cycle shake', 'Water valves', 'Door boots']
   },
   {
     id: 'dryers',
     name: 'Dryers',
-    image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80',
+    image: 'https://uaebusinessman.com/wp-content/uploads/2025/09/How-to-Fix-Dryer-With-No-Power-Supply-1024x684.webp',
     description: 'Electric and natural gas dryers, ventless heat pump dryers, and stacked laundry sets.',
     features: ['Heating coils', 'Thermal fuses', 'Drive belts', 'Motor pulleys']
   },
   {
     id: 'ovens',
     name: 'Ovens',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80',
+    image: 'https://fixappliance.co.uk/wp-content/uploads/2025/08/Electric-Oven-Repair.jpg',
     description: 'Single and double wall ovens, drop-in ovens, convection models, and microwave combinations.',
     features: ['Bake elements', 'Gas igniters', 'Control boards', 'Temperature calibration']
   },
   {
-    id: 'stoves',
-    name: 'Stoves',
-    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=600&q=80',
-    description: 'Freestanding ranges, slide-in ranges, dual-fuel stoves, and commercial-style ranges.',
+    id: 'stoves-cooktops',
+    name: 'Stoves & Cooktops',
+    image: 'https://www.glbrain.com/images/tools/80/3a/69d3520856cb12f99dd6c2368b083a80_xxbig.jpg',
+    description: 'Freestanding ranges, slide-in ranges, dual-fuel stoves, smooth radiant glass, and gas cooktops.',
     features: ['Gas valves', 'Spark electrodes', 'Surface elements', 'Ignition modules']
   },
   {
-    id: 'cooktops',
-    name: 'Cooktops',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80',
-    description: 'Smooth radiant glass cooktops, gas drop-in burners, and induction magnetic stovetops.',
-    features: ['Induction boards', 'Rotary switches', 'Hot indicator', 'Glass top repair']
-  },
-  {
-    id: 'lg-refrigerators',
-    name: 'LG Refrigerators',
-    image: 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=600&q=80',
+    id: 'lg-compressors',
+    name: 'LG Compressor Replacement',
+    image: 'https://guide-images.cdn.ifixit.com/igi/fDeZjPFBpZXrLuTI.medium',
     description: 'Specialized LG linear compressor diagnostics, software updates, and sealed-system repairs.',
     badge: 'Specialized Service',
     features: ['Linear compressors', 'PCB upgrades', 'Dryer filter swap', 'Vacuum recharge']
-  },
-  {
-    id: 'sub-zero-refrigeration',
-    name: 'Sub-Zero Systems',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
-    description: 'Precision luxury refrigeration service for all built-in and integrated Sub-Zero series.',
-    badge: 'Luxury Brand',
-    features: ['Dual compressors', 'Condenser clean', 'Microprocessors', 'Magnetic seals']
   }
 ];
 
 export const GALLERY_PHOTOS: GalleryPhoto[] = [
   {
-    id: 'gal-1',
-    title: 'French Door Refrigerator Repair',
+    id: 'gal-refrigerator',
+    title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'refrigeration',
-    categoryLabel: 'Refrigerators',
-    image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80',
-    alt: 'Stainless steel French door refrigerator diagnostic and repair in modern kitchen',
-    caption: 'Diagnosing cooling loop and damper control on a stainless French-door refrigerator.'
+    categoryLabel: 'Refrigerator',
+    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    alt: 'Technician performing refrigerator repair and cooling system diagnosis',
+    caption: 'Diagnosing cooling loop, evaporator fan, and temperature controls on residential refrigerator.'
   },
   {
-    id: 'gal-2',
-    title: 'LG Linear Compressor Replacement',
+    id: 'gal-freezer',
+    title: 'Freezer Repair & Temperature Restoration',
+    category: 'refrigeration',
+    categoryLabel: 'Freezer',
+    image: 'https://cloudfrontgharpediabucket.gharpedia.com/uploads/2024/11/Complex-Repairs-08-0706140003.jpg',
+    alt: 'Freezer repair service, defrost troubleshooting and sealed system repair',
+    caption: 'Thawing frost buildup, replacing bi-metal defrost thermostats, and starter relay diagnostics.'
+  },
+  {
+    id: 'gal-dryer',
+    title: 'Dryer Repair & Heating Element Replacement',
+    category: 'laundry',
+    categoryLabel: 'Dryer',
+    image: 'https://uaebusinessman.com/wp-content/uploads/2025/09/How-to-Fix-Dryer-With-No-Power-Supply-1024x684.webp',
+    alt: 'Clothes dryer repair, electrical diagnostics and heating system inspection',
+    caption: 'Replacing burnt thermal fuses, heating elements, drum support rollers, and belt tensioners.'
+  },
+  {
+    id: 'gal-oven',
+    title: 'Electric & Gas Oven Repair',
+    category: 'cooking',
+    categoryLabel: 'Oven',
+    image: 'https://fixappliance.co.uk/wp-content/uploads/2025/08/Electric-Oven-Repair.jpg',
+    alt: 'Electric oven bake element and temperature calibration service',
+    caption: 'Calibrating electronic oven controls, replacing glow igniters, and installing OEM heating elements.'
+  },
+  {
+    id: 'gal-stove-cooktop',
+    title: 'Stove & Cooktop Burner / Ignition Repair',
+    category: 'cooking',
+    categoryLabel: 'Stove & Cooktop',
+    image: 'https://www.glbrain.com/images/tools/80/3a/69d3520856cb12f99dd6c2368b083a80_xxbig.jpg',
+    alt: 'Stove and cooktop repair, spark electrode tuning and radiant element diagnostics',
+    caption: 'Spark igniter electrode tuning, infinite rotary switch replacement, and glass top inspection.'
+  },
+  {
+    id: 'gal-washer',
+    title: 'Washer Repair & Drain Pump Service',
+    category: 'laundry',
+    categoryLabel: 'Washer',
+    image: 'https://blog.aham.org/wp-content/uploads/2026/03/appliance-repair-1024x683.jpg',
+    alt: 'Washing machine repair technician fixing motor and water inlet valves',
+    caption: 'Drain pump unclogging, direct-drive motor servicing, and suspension rod balancing.'
+  },
+  {
+    id: 'gal-lg-compressor',
+    title: 'LG Refrigerator Compressor Replacement',
     category: 'specialty',
     categoryLabel: 'LG Specialty',
-    image: 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=800&q=80',
-    alt: 'Specialized linear compressor replacement and sealed system brazing on LG refrigerator',
-    caption: 'Full sealed-system compressor replacement with nitrogen purge and factory spec recharging.'
-  },
-  {
-    id: 'gal-3',
-    title: 'High-Efficiency Front-Load Washer',
-    category: 'laundry',
-    categoryLabel: 'Washers',
-    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80',
-    alt: 'Front loading washing machine undergoing drain pump and shock absorber service',
-    caption: 'Drainage pump replacement and suspension balancing on high-efficiency front loader.'
-  },
-  {
-    id: 'gal-4',
-    title: 'Electric Dryer Heating Element Fix',
-    category: 'laundry',
-    categoryLabel: 'Dryers',
-    image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=800&q=80',
-    alt: 'Electric clothes dryer thermal fuse and heating coil troubleshooting',
-    caption: 'Replacing burnt thermal fuse and heavy-duty heating coil on residential electric dryer.'
-  },
-  {
-    id: 'gal-5',
-    title: 'Professional Gas Range Ignition Repair',
-    category: 'cooking',
-    categoryLabel: 'Ovens & Stoves',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
-    alt: 'Gas oven and cooktop burner spark module troubleshooting in residential kitchen',
-    caption: 'Ignition electrode realignment and gas safety valve calibration on 36-inch range.'
-  },
-  {
-    id: 'gal-6',
-    title: 'Sub-Zero Built-in Dual Compressor Service',
-    category: 'specialty',
-    categoryLabel: 'Sub-Zero Luxury',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-    alt: 'Sub-Zero architectural built-in refrigerator maintenance in Burien custom residence',
-    caption: 'Condenser vacuuming and dual-compressor microprocessor calibration on luxury Sub-Zero.'
-  },
-  {
-    id: 'gal-7',
-    title: 'Modern Cooktop Ceramic Element Repair',
-    category: 'cooking',
-    categoryLabel: 'Cooktops',
-    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80',
-    alt: 'Ceramic glass cooktop heating element replacement and wiring inspection',
-    caption: 'Replacing high-output radiant element and infinite heat control switch.'
-  },
-  {
-    id: 'gal-8',
-    title: 'Upright Freezer Temperature Fix',
-    category: 'refrigeration',
-    categoryLabel: 'Freezers',
-    image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80',
-    alt: 'Standup upright freezer defrost heater and thermostat service',
-    caption: 'Clearing evaporator frost buildup and replacing bi-metal defrost thermostat.'
-  },
-  {
-    id: 'gal-9',
-    title: 'Appliance Electrical Circuit Diagnostics',
-    category: 'diagnostics',
-    categoryLabel: 'Diagnostics',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    alt: 'Multimeter electrical diagnostics on appliance control board and wire harness',
-    caption: 'Digital multimeter voltage testing and main PCB trace inspection for intermittent faults.'
-  },
-  {
-    id: 'gal-10',
-    title: 'Washing Machine Suspension & Drum Alignment',
-    category: 'laundry',
-    categoryLabel: 'Washers',
-    image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80',
-    alt: 'Top-load washer suspension rods replacement and drum balancing test',
-    caption: 'Installing 4 new heavy-duty dampening suspension rods to eliminate high-speed spinning vibration.'
-  },
-  {
-    id: 'gal-11',
-    title: 'Commercial-Style Convection Oven Repair',
-    category: 'cooking',
-    categoryLabel: 'Ovens',
-    image: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80',
-    alt: 'Convection fan motor and hidden bake element service in double oven',
-    caption: 'Convection fan motor replacement to restore even heat distribution across oven racks.'
-  },
-  {
-    id: 'gal-12',
-    title: 'Dual Evaporator Refrigerator Diagnostics',
-    category: 'refrigeration',
-    categoryLabel: 'Refrigerators',
-    image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=800&q=80',
-    alt: 'Smart refrigerator electronic sensor check and evaporator coil inspection',
-    caption: 'Diagnosing independent fresh-food evaporator fan and digital thermistor sensors.'
-  },
-  {
-    id: 'gal-13',
-    title: 'Dryer Drum Roller & Belt Replacement',
-    category: 'laundry',
-    categoryLabel: 'Dryers',
-    image: 'https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=800&q=80',
-    alt: 'Dryer drum maintenance, pulley lubrication, and high-tension drive belt replacement',
-    caption: 'Replacing squeaking idler pulley and hardened drum support rollers with OEM parts.'
-  },
-  {
-    id: 'gal-14',
-    title: 'Induction Cooktop Power Module Fix',
-    category: 'cooking',
-    categoryLabel: 'Cooktops',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
-    alt: 'Induction magnetic cooktop circuit board repair and touch sensor tuning',
-    caption: 'High-frequency IGBT power inverter module diagnostic and replacement.'
-  },
-  {
-    id: 'gal-15',
-    title: 'Deep Freezer Compressor Start Relay',
-    category: 'refrigeration',
-    categoryLabel: 'Freezers',
-    image: 'https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?auto=format&fit=crop&w=800&q=80',
-    alt: 'Chest freezer compressor solid-state starter relay and run capacitor replacement',
-    caption: 'Replacing burned PTC starter device and capacitor to restore instant compressor ignition.'
-  },
-  {
-    id: 'gal-16',
-    title: 'Front-Load Washer Door Lock & Seal Service',
-    category: 'laundry',
-    categoryLabel: 'Washers',
-    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=800&q=80',
-    alt: 'Washing machine door interlock latch switch and rubber bellows gasket replacement',
-    caption: 'Installing new magnetic door lock mechanism and mildew-resistant door boot seal.'
-  },
-  {
-    id: 'gal-17',
-    title: 'Sub-Zero Column Wine & Fridge Service',
-    category: 'specialty',
-    categoryLabel: 'Sub-Zero Luxury',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-    alt: 'Sub-Zero integrated wine column and refrigerator dual zone control service',
-    caption: 'Precision dual-zone humidity and temperature calibration on Sub-Zero integrated column.'
-  },
-  {
-    id: 'gal-18',
-    title: 'Gas Range Glow Igniter Replacement',
-    category: 'cooking',
-    categoryLabel: 'Ovens & Stoves',
-    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
-    alt: 'Silicon carbide bake igniter replacement in gas oven',
-    caption: 'Testing igniter amperage draw and installing OEM silicon nitride igniter.'
-  },
-  {
-    id: 'gal-19',
-    title: 'Precision Refrigerant Leak Detection',
-    category: 'diagnostics',
-    categoryLabel: 'Diagnostics',
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    alt: 'Electronic halogen leak detector inspection on refrigerator copper tubing',
-    caption: 'Sniffing out microscopic sealed-system leaks with ultrasonic halogen detection tools.'
-  },
-  {
-    id: 'gal-20',
-    title: 'Complete Appliance Maintenance & Tune-Up',
-    category: 'diagnostics',
-    categoryLabel: 'Diagnostics',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
-    alt: 'Appliance repair technician testing appliances in residential Burien kitchen',
-    caption: 'Full 21-point mechanical and electrical safety verification after repair completion.'
+    image: 'https://guide-images.cdn.ifixit.com/igi/fDeZjPFBpZXrLuTI.medium',
+    alt: 'Specialized LG linear compressor extraction, brazing, and sealed system replacement',
+    caption: 'Authorized LG linear compressor replacement, nitrogen brazing, software MCU flash, and refrigerant recharge.'
   }
 ];
 

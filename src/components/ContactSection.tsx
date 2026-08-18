@@ -285,15 +285,12 @@ export const ContactSection: React.FC = () => {
                         className="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-xs sm:text-sm font-semibold text-white focus:outline-hidden focus:ring-2 focus:ring-red-500"
                       >
                         <option value="Refrigerator">Refrigerator</option>
-                        <option value="Freezer">Freezer / Deep Freeze</option>
-                        <option value="Washing Machine">Washing Machine</option>
-                        <option value="Clothes Dryer">Clothes Dryer</option>
+                        <option value="Freezer">Freezer</option>
+                        <option value="Clothes Dryer">Dryer</option>
                         <option value="Oven">Oven</option>
-                        <option value="Stove / Range">Stove / Range</option>
-                        <option value="Cooktop">Cooktop</option>
-                        <option value="LG Linear Compressor">LG Refrigerator Compressor</option>
-                        <option value="Sub-Zero System">Sub-Zero Luxury Unit</option>
-                        <option value="Other Appliance">Other Major Appliance</option>
+                        <option value="Stove / Cooktop">Stove & Cooktop</option>
+                        <option value="Washing Machine">Washer</option>
+                        <option value="LG Linear Compressor">LG Refrigerator Compressor Replacement</option>
                       </select>
                     </div>
 

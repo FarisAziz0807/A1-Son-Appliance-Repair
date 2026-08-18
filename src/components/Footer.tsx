@@ -67,11 +67,12 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#services" className="hover:text-red-400 transition-colors">Refrigerator Repair</a></li>
-              <li><a href="#services" className="hover:text-red-400 transition-colors">Freezer & Deep Freeze</a></li>
-              <li><a href="#services" className="hover:text-red-400 transition-colors">Washer & Dryer Troubleshooting</a></li>
-              <li><a href="#services" className="hover:text-red-400 transition-colors">Oven, Range & Stove</a></li>
-              <li><a href="#services" className="hover:text-red-400 transition-colors font-bold text-red-400">LG Linear Compressor Swop</a></li>
-              <li><a href="#services" className="hover:text-red-400 transition-colors font-bold text-red-400">Sub-Zero Luxury Maintenance</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors">Freezer Repair</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors">Dryer Repair</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors">Oven Repair</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors">Stove & Cooktop Repair</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors">Washer Repair</a></li>
+              <li><a href="#services" className="hover:text-red-400 transition-colors font-bold text-red-400">LG Refrigerator Compressor</a></li>
             </ul>
           </div>
 

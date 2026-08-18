@@ -9,31 +9,66 @@ interface HeroProps {
 const HERO_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=85',
-    title: 'Refrigerator & Sealed System Repair',
+    serviceId: 'refrigerator-repair',
+    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    fallback: '/images/services/refrigerator-repair.jpg',
+    title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'Cooling Specialist',
     caption: 'Compressor diagnostics, refrigerant recharge & cold airflow recovery.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=85',
-    title: 'Washer & Dryer Precision Service',
-    category: 'Laundry Mechanics',
-    caption: 'Drain pumps, heating elements, suspension rods & quiet belt drives.'
+    serviceId: 'freezer-repair',
+    image: 'https://cloudfrontgharpediabucket.gharpedia.com/uploads/2024/11/Complex-Repairs-08-0706140003.jpg',
+    fallback: '/images/services/freezer-repair.jpg',
+    title: 'Freezer & Deep Freeze Precision Repair',
+    category: 'Freezer Mechanics',
+    caption: 'Frost-free defrost cycles, starter relays & precision thermostat controls.'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85',
-    title: 'Oven, Range & Cooktop Calibration',
-    category: 'Cooking Systems',
-    caption: 'Gas igniter replacements, dual bake elements & digital thermostat setup.'
+    serviceId: 'dryer-repair',
+    image: 'https://uaebusinessman.com/wp-content/uploads/2025/09/How-to-Fix-Dryer-With-No-Power-Supply-1024x684.webp',
+    fallback: '/images/services/dryer-repair.webp',
+    title: 'Dryer Heating & Tumble Drive Repair',
+    category: 'Laundry Specialists',
+    caption: 'Thermal fuses, heating coils, rollers & quiet belt replacements.'
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85',
-    title: 'LG Linear & Sub-Zero Luxury Care',
-    category: 'Premium & High-End',
-    caption: 'Microprocessor tuning, linear compressor swop & sealed nitrogen testing.'
+    serviceId: 'oven-repair',
+    image: 'https://fixappliance.co.uk/wp-content/uploads/2025/08/Electric-Oven-Repair.jpg',
+    fallback: '/images/services/oven-repair.jpg',
+    title: 'Electric & Gas Oven Calibration',
+    category: 'Cooking Systems',
+    caption: 'Dual bake elements, gas safety valves & digital temperature setup.'
+  },
+  {
+    id: 5,
+    serviceId: 'stove-cooktop-repair',
+    image: 'https://www.glbrain.com/images/tools/80/3a/69d3520856cb12f99dd6c2368b083a80_xxbig.jpg',
+    fallback: '/images/services/stove-cooktop-repair.jpg',
+    title: 'Stove & Cooktop Burner & Igniter Fix',
+    category: 'Range Mechanics',
+    caption: 'Spark electrodes, infinite burner switches & radiant surface repairs.'
+  },
+  {
+    id: 6,
+    serviceId: 'washer-repair',
+    image: 'https://blog.aham.org/wp-content/uploads/2026/03/appliance-repair-1024x683.jpg',
+    fallback: '/images/services/washer-repair.jpg',
+    title: 'Washing Machine Pump & Motor Repair',
+    category: 'Laundry Specialists',
+    caption: 'Drain pumps, direct-drive motors & heavy-duty suspension balancing.'
+  },
+  {
+    id: 7,
+    serviceId: 'lg-compressor-replacement',
+    image: 'https://guide-images.cdn.ifixit.com/igi/fDeZjPFBpZXrLuTI.medium',
+    fallback: '/images/services/lg-compressor.jpg',
+    title: 'LG Refrigerator Compressor Replacement',
+    category: 'Certified Specialty',
+    caption: 'Authorized linear compressor extraction, MCU software flash & sealed vacuum charging.'
   }
 ];
 
@@ -170,8 +205,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   src={HERO_SLIDES[currentSlide].image}
                   alt={HERO_SLIDES[currentSlide].title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const fallback = HERO_SLIDES[currentSlide].fallback;
+                    if (fallback) {
+                      e.currentTarget.src = fallback;
+                    }
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent p-5 flex flex-col justify-between" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent p-5 flex flex-col justify-between pointer-events-none" />
                 
                 {/* Top Badge */}
                 <div className="absolute top-4 left-4">

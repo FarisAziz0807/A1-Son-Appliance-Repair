@@ -64,14 +64,33 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
               }`}
             >
               {/* Card Image Container */}
-              <div className="relative h-52 w-full overflow-hidden bg-slate-100">
+              <div className="relative h-52 w-full overflow-hidden bg-slate-900">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (service.id === 'refrigerator-repair') {
+                      target.src = '/images/services/refrigerator-repair.jpg';
+                    } else if (service.id === 'freezer-repair') {
+                      target.src = '/images/services/freezer-repair.jpg';
+                    } else if (service.id === 'dryer-repair') {
+                      target.src = '/images/services/dryer-repair.webp';
+                    } else if (service.id === 'oven-repair') {
+                      target.src = '/images/services/oven-repair.jpg';
+                    } else if (service.id === 'stove-cooktop-repair') {
+                      target.src = '/images/services/stove-cooktop-repair.jpg';
+                    } else if (service.id === 'washer-repair') {
+                      target.src = '/images/services/washer-repair.jpg';
+                    } else if (service.id === 'lg-compressor-replacement') {
+                      target.src = '/images/services/lg-compressor.jpg';
+                    }
+                  }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent pointer-events-none" />
                 
                 {/* Badge if present */}
                 {service.badge && (

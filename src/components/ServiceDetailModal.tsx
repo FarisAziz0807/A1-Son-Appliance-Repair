@@ -28,8 +28,27 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             src={service.image}
             alt={service.title}
             className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (service.id === 'refrigerator-repair') {
+                target.src = '/images/services/refrigerator-repair.jpg';
+              } else if (service.id === 'freezer-repair') {
+                target.src = '/images/services/freezer-repair.jpg';
+              } else if (service.id === 'dryer-repair') {
+                target.src = '/images/services/dryer-repair.webp';
+              } else if (service.id === 'oven-repair') {
+                target.src = '/images/services/oven-repair.jpg';
+              } else if (service.id === 'stove-cooktop-repair') {
+                target.src = '/images/services/stove-cooktop-repair.jpg';
+              } else if (service.id === 'washer-repair') {
+                target.src = '/images/services/washer-repair.jpg';
+              } else if (service.id === 'lg-compressor-replacement') {
+                target.src = '/images/services/lg-compressor.jpg';
+              }
+            }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent pointer-events-none" />
           
           <button
             onClick={onClose}

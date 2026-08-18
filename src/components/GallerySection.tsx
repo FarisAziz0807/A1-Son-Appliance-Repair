@@ -17,13 +17,33 @@ export const GallerySection: React.FC = () => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState<number | null>(null);
 
   const filters = [
-    { key: 'all', label: 'All Photos (20+)' },
+    { key: 'all', label: 'All Photos (7)' },
     { key: 'refrigeration', label: 'Refrigerators & Freezers' },
     { key: 'laundry', label: 'Washers & Dryers' },
-    { key: 'cooking', label: 'Ovens & Cooktops' },
-    { key: 'specialty', label: 'LG & Sub-Zero Specialty' },
-    { key: 'diagnostics', label: 'Diagnostics & Tools' },
+    { key: 'cooking', label: 'Ovens & Stoves' },
+    { key: 'specialty', label: 'LG Specialty' },
   ];
+
+  const getFallbackImage = (photoId: string) => {
+    switch (photoId) {
+      case 'gal-refrigerator':
+        return '/images/services/refrigerator-repair.jpg';
+      case 'gal-freezer':
+        return '/images/services/freezer-repair.jpg';
+      case 'gal-dryer':
+        return '/images/services/dryer-repair.webp';
+      case 'gal-oven':
+        return '/images/services/oven-repair.jpg';
+      case 'gal-stove-cooktop':
+        return '/images/services/stove-cooktop-repair.jpg';
+      case 'gal-washer':
+        return '/images/services/washer-repair.jpg';
+      case 'gal-lg-compressor':
+        return '/images/services/lg-compressor.jpg';
+      default:
+        return '/images/services/refrigerator-repair.jpg';
+    }
+  };
 
   const filteredPhotos = activeFilter === 'all'
     ? GALLERY_PHOTOS
@@ -71,7 +91,7 @@ export const GallerySection: React.FC = () => {
             Appliance Repair Gallery
           </h2>
           <p className="text-base text-slate-600 leading-relaxed">
-            Browse our field gallery showcasing residential refrigerator sealed systems, laundry mechanics, range igniters, LG linear compressors, and Sub-Zero luxury units.
+            Browse our field gallery showcasing residential refrigerators, freezers, dryers, ovens, stoves & cooktops, washers, and specialized LG linear compressor replacements.
           </p>
 
           {/* Filter Pills */}
@@ -95,48 +115,53 @@ export const GallerySection: React.FC = () => {
           </div>
         </div>
 
-        {/* 20+ Masonry Columns Grid */}
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredPhotos.map((photo, index) => (
             <div
               key={photo.id}
               onClick={() => setSelectedPhotoIndex(index)}
-              className="break-inside-avoid group relative rounded-2xl overflow-hidden bg-slate-900 shadow-sm hover:shadow-xl border border-slate-200/80 cursor-pointer transition-all duration-300 transform hover:-translate-y-1"
+              className="group relative rounded-2xl overflow-hidden bg-slate-900 shadow-sm hover:shadow-xl border border-slate-200/80 cursor-pointer transition-all duration-300 transform hover:-translate-y-1 flex flex-col"
             >
-              {/* Image */}
-              <img
-                src={photo.image}
-                alt={photo.alt}
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
+              {/* Image Container */}
+              <div className="relative h-60 w-full overflow-hidden bg-slate-900">
+                <img
+                  src={photo.image}
+                  alt={photo.alt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = getFallbackImage(photo.id);
+                  }}
+                />
 
-              {/* Hover Dark Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col justify-between">
-                
-                {/* Top Badge */}
-                <div className="flex justify-between items-start">
-                  <span className="bg-red-600 text-white text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md shadow-sm">
-                    {photo.categoryLabel}
-                  </span>
-                  <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
-                    <ZoomIn className="w-4 h-4" />
+                {/* Hover Dark Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col justify-between">
+                  {/* Top Badge */}
+                  <div className="flex justify-between items-start">
+                    <span className="bg-red-600 text-white text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md shadow-sm">
+                      {photo.categoryLabel}
+                    </span>
+                    <div className="w-8 h-8 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
+                      <ZoomIn className="w-4 h-4" />
+                    </div>
                   </div>
-                </div>
 
-                {/* Bottom Caption */}
-                <div>
-                  <h4 className="text-sm font-bold text-white leading-snug">
-                    {photo.title}
-                  </h4>
-                  <p className="text-[11px] text-slate-300 mt-1 line-clamp-2">
-                    {photo.caption}
-                  </p>
+                  {/* Bottom Caption */}
+                  <div>
+                    <h4 className="text-sm font-bold text-white leading-snug">
+                      {photo.title}
+                    </h4>
+                    <p className="text-[11px] text-slate-300 mt-1 line-clamp-2">
+                      {photo.caption}
+                    </p>
+                  </div>
                 </div>
               </div>
 
-              {/* Static title strip visible on mobile / touch */}
-              <div className="p-2.5 bg-white border-t border-slate-100 sm:hidden">
+              {/* Bottom Card Title */}
+              <div className="p-3.5 bg-white border-t border-slate-100">
                 <span className="text-[10px] font-extrabold text-red-600 uppercase block">
                   {photo.categoryLabel}
                 </span>
@@ -204,6 +229,10 @@ export const GallerySection: React.FC = () => {
                 src={currentPhoto.image}
                 alt={currentPhoto.alt}
                 className="w-full h-auto max-h-[65vh] sm:max-h-[70vh] object-contain"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.src = getFallbackImage(currentPhoto.id);
+                }}
               />
             </div>
 

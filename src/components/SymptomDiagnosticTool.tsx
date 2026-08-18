@@ -37,7 +37,24 @@ const DIAGNOSTIC_DATABASE: SymptomData[] = [
     ]
   },
   {
-    appliance: 'LG Refrigerator',
+    appliance: 'Freezer',
+    symptoms: [
+      {
+        name: 'Frost buildup on back wall & continuous running',
+        probableCause: 'Defrost timer, bimetal sensor failure, or worn door gasket seal',
+        urgency: 'Medium',
+        recommendation: 'Defrost cycle repair or gasket alignment restores consistent freezing.'
+      },
+      {
+        name: 'Freezer thawing out or fluctuating temperatures',
+        probableCause: 'Compressor start relay failure or thermostat malfunction',
+        urgency: 'High',
+        recommendation: 'Relay and temperature control diagnostics protect food contents.'
+      }
+    ]
+  },
+  {
+    appliance: 'LG Refrigerator Compressor',
     symptoms: [
       {
         name: 'LG Linear compressor silent or humming but box warming',
@@ -54,24 +71,7 @@ const DIAGNOSTIC_DATABASE: SymptomData[] = [
     ]
   },
   {
-    appliance: 'Sub-Zero Luxury System',
-    symptoms: [
-      {
-        name: 'Vacuum Condenser light illuminated or Service wrench icon',
-        probableCause: 'Restricted condenser airflow, lint buildup, or evaporator temperature sensor drift',
-        urgency: 'Medium',
-        recommendation: 'Condenser coil cleaning and microprocessor sensor calibration needed.'
-      },
-      {
-        name: 'Freezer temperature rising above 10°F',
-        probableCause: 'Dedicated freezer compressor cycle fault or defrost heater open circuit',
-        urgency: 'High',
-        recommendation: 'Dual-compressor isolation test to protect food inventory.'
-      }
-    ]
-  },
-  {
-    appliance: 'Washing Machine',
+    appliance: 'Washer',
     symptoms: [
       {
         name: 'Washer stops with water inside & won’t drain (Error OE / 5E)',
@@ -105,7 +105,7 @@ const DIAGNOSTIC_DATABASE: SymptomData[] = [
     ]
   },
   {
-    appliance: 'Oven & Stove',
+    appliance: 'Oven & Cooktop',
     symptoms: [
       {
         name: 'Gas oven takes 15+ minutes to light or doesn’t heat',

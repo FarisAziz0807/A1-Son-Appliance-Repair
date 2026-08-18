@@ -16,12 +16,16 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 bg-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80"
+                src="https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp"
                 alt="A1 & Son Appliance Repair technician diagnosing household appliance in Burien WA"
                 className="w-full h-[460px] object-cover"
                 loading="lazy"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  e.currentTarget.src = '/images/services/refrigerator-repair.jpg';
+                }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
               
               {/* Bottom Badge inside photo */}
               <div className="absolute bottom-6 left-6 right-6 text-white bg-slate-900/90 backdrop-blur-md p-4 rounded-2xl border border-slate-700/80 shadow-lg">

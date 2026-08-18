@@ -148,12 +148,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   >
                     <option value="Refrigerator">Refrigerator</option>
                     <option value="Freezer">Freezer</option>
-                    <option value="Washing Machine">Washing Machine</option>
-                    <option value="Dryer">Clothes Dryer</option>
+                    <option value="Dryer">Dryer</option>
                     <option value="Oven">Oven</option>
-                    <option value="Stove / Cooktop">Stove / Cooktop</option>
-                    <option value="LG Linear Compressor">LG Linear Compressor</option>
-                    <option value="Sub-Zero System">Sub-Zero System</option>
+                    <option value="Stove / Cooktop">Stove & Cooktop</option>
+                    <option value="Washer">Washer</option>
+                    <option value="LG Linear Compressor">LG Linear Compressor Replacement</option>
                   </select>
                 </div>
 
