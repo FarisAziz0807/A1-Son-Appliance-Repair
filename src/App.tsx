@@ -39,7 +39,7 @@ export default function App() {
       <Header onOpenBooking={() => handleOpenBooking()} />
 
       {/* Main Content Sections in Requested Order */}
-      <main className="flex-1">
+      <main className="flex-1 pb-16 sm:pb-0">
         {/* 1. Hero Section */}
         <Hero onOpenBooking={() => handleOpenBooking()} />
 

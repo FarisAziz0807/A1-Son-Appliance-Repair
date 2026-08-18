@@ -32,7 +32,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Evaporator fan motor and condenser fan replacements'
     ],
     commonProblems: ['Not cooling', 'Water pooling underneath', 'Clicking noise from back', 'Ice buildup on coils', 'Ice maker not working'],
-    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    image: 'https://www.smartappliance.co.za/wp-content/uploads/2022/11/fridge-2-1024x683.webp',
     badge: 'High Priority Service'
   },
   {
@@ -130,7 +130,7 @@ export const APPLIANCE_TYPES: ApplianceType[] = [
   {
     id: 'refrigerators',
     name: 'Refrigerators',
-    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    image: 'https://www.smartappliance.co.za/wp-content/uploads/2022/11/fridge-2-1024x683.webp',
     description: 'French door, side-by-side, bottom freezer, top mount, compact, and counter-depth models.',
     features: ['Cooling issues', 'Water leaks', 'Ice makers', 'Thermostat faults']
   },
@@ -185,7 +185,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'refrigeration',
     categoryLabel: 'Refrigerator',
-    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    image: 'https://www.smartappliance.co.za/wp-content/uploads/2022/11/fridge-2-1024x683.webp',
     alt: 'Technician performing refrigerator repair and cooling system diagnosis',
     caption: 'Diagnosing cooling loop, evaporator fan, and temperature controls on residential refrigerator.'
   },

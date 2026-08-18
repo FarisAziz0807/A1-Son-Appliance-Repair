@@ -10,7 +10,7 @@ const HERO_SLIDES = [
   {
     id: 1,
     serviceId: 'refrigerator-repair',
-    image: 'https://frostguide.ru/wp-content/uploads/2026/03/fridge-repair_1-scaled.webp',
+    image: 'https://www.smartappliance.co.za/wp-content/uploads/2022/11/fridge-2-1024x683.webp',
     fallback: '/images/services/refrigerator-repair.jpg',
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'Cooling Specialist',
