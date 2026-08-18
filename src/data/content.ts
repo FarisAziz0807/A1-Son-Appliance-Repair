@@ -105,7 +105,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Induction power board and touch-sensor glass diagnosis'
     ],
     commonProblems: ['Burner clicking constantly', 'Electric element won’t heat', 'Glass top hot-surface indicator stays on', 'Low gas flame'],
-    image: 'https://images.unsplash.com/photo-1590725140246-20ac7054f387?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'washer-repair',
@@ -209,14 +209,14 @@ export const APPLIANCE_TYPES: ApplianceType[] = [
   {
     id: 'stoves',
     name: 'Stoves',
-    image: 'https://images.unsplash.com/photo-1590725140246-20ac7054f387?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=600&q=80',
     description: 'Freestanding ranges, slide-in ranges, dual-fuel stoves, and commercial-style ranges.',
     features: ['Gas valves', 'Spark electrodes', 'Surface elements', 'Ignition modules']
   },
   {
     id: 'cooktops',
     name: 'Cooktops',
-    image: 'https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80',
     description: 'Smooth radiant glass cooktops, gas drop-in burners, and induction magnetic stovetops.',
     features: ['Induction boards', 'Rotary switches', 'Hot indicator', 'Glass top repair']
   },
@@ -298,7 +298,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Modern Cooktop Ceramic Element Repair',
     category: 'cooking',
     categoryLabel: 'Cooktops',
-    image: 'https://images.unsplash.com/photo-1590725140246-20ac7054f387?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=800&q=80',
     alt: 'Ceramic glass cooktop heating element replacement and wiring inspection',
     caption: 'Replacing high-output radiant element and infinite heat control switch.'
   },
@@ -397,7 +397,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Gas Range Glow Igniter Replacement',
     category: 'cooking',
     categoryLabel: 'Ovens & Stoves',
-    image: 'https://images.unsplash.com/photo-1590725140246-20ac7054f387?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80',
     alt: 'Silicon carbide bake igniter replacement in gas oven',
     caption: 'Testing igniter amperage draw and installing OEM silicon nitride igniter.'
   },
