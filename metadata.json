@@ -1,0 +1,6 @@
+{
+  "name": "A1 & Son Appliance Repair",
+  "description": "Professional appliance repair services in Burien, Seattle, and surrounding Washington areas for refrigerators, washers, dryers, ovens, stoves, and more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
