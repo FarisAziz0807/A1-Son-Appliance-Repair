@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Phone, CheckCircle2, AlertCircle, Wrench, ShieldCheck, Zap } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { BUSINESS_INFO } from '../data/content';
+import { APP_IMAGES } from '../assets/images';
 
 interface ServiceDetailModalProps {
   service: ServiceItem | null;
@@ -32,19 +33,19 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             onError={(e) => {
               const target = e.currentTarget;
               if (service.id === 'refrigerator-repair') {
-                target.src = '/images/services/refrigerator-repair.jpg';
+                target.src = APP_IMAGES.refrigerator;
               } else if (service.id === 'freezer-repair') {
-                target.src = '/images/services/freezer-repair.jpg';
+                target.src = APP_IMAGES.freezer;
               } else if (service.id === 'dryer-repair') {
-                target.src = '/images/services/dryer-repair.webp';
+                target.src = APP_IMAGES.dryer;
               } else if (service.id === 'oven-repair') {
-                target.src = '/images/services/oven-repair.jpg';
+                target.src = APP_IMAGES.oven;
               } else if (service.id === 'stove-cooktop-repair') {
-                target.src = '/images/services/stove-cooktop-repair.jpg';
+                target.src = APP_IMAGES.stove;
               } else if (service.id === 'washer-repair') {
-                target.src = '/images/services/washer-repair.jpg';
+                target.src = APP_IMAGES.washer;
               } else if (service.id === 'lg-compressor-replacement') {
-                target.src = '/images/services/lg-compressor.jpg';
+                target.src = APP_IMAGES.lgCompressor;
               }
             }}
           />

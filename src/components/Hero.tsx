@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Calendar, ArrowRight, ChevronLeft, ChevronRight, Star, ShieldCheck, Wrench, MessageSquare, CheckCircle2, MapPin, Sparkles } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
+import { APP_IMAGES } from '../assets/images';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -10,8 +11,8 @@ const HERO_SLIDES = [
   {
     id: 1,
     serviceId: 'refrigerator-repair',
-    image: '/images/services/refrigerator-repair.jpg',
-    fallback: '/images/services/smartappliance-fridge.webp',
+    image: APP_IMAGES.refrigerator,
+    fallback: APP_IMAGES.refrigerator,
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'Cooling Specialist',
     caption: 'Compressor diagnostics, refrigerant recharge & cold airflow recovery.'
@@ -19,8 +20,8 @@ const HERO_SLIDES = [
   {
     id: 2,
     serviceId: 'freezer-repair',
-    image: '/images/services/freezer-repair.jpg',
-    fallback: '/images/services/freezer-repair.jpg',
+    image: APP_IMAGES.freezer,
+    fallback: APP_IMAGES.freezer,
     title: 'Freezer & Deep Freeze Precision Repair',
     category: 'Freezer Mechanics',
     caption: 'Frost-free defrost cycles, starter relays & precision thermostat controls.'
@@ -28,8 +29,8 @@ const HERO_SLIDES = [
   {
     id: 3,
     serviceId: 'dryer-repair',
-    image: '/images/services/dryer-repair.webp',
-    fallback: '/images/services/dryer-repair.webp',
+    image: APP_IMAGES.dryer,
+    fallback: APP_IMAGES.dryer,
     title: 'Dryer Heating & Tumble Drive Repair',
     category: 'Laundry Specialists',
     caption: 'Thermal fuses, heating coils, rollers & quiet belt replacements.'
@@ -37,8 +38,8 @@ const HERO_SLIDES = [
   {
     id: 4,
     serviceId: 'oven-repair',
-    image: '/images/services/oven-repair.jpg',
-    fallback: '/images/services/oven-repair.jpg',
+    image: APP_IMAGES.oven,
+    fallback: APP_IMAGES.oven,
     title: 'Electric & Gas Oven Calibration',
     category: 'Cooking Systems',
     caption: 'Dual bake elements, gas safety valves & digital temperature setup.'
@@ -46,8 +47,8 @@ const HERO_SLIDES = [
   {
     id: 5,
     serviceId: 'stove-cooktop-repair',
-    image: '/images/services/stove-cooktop-repair.jpg',
-    fallback: '/images/services/stove-cooktop-repair.jpg',
+    image: APP_IMAGES.stove,
+    fallback: APP_IMAGES.stove,
     title: 'Stove & Cooktop Burner & Igniter Fix',
     category: 'Range Mechanics',
     caption: 'Spark electrodes, infinite burner switches & radiant surface repairs.'
@@ -55,8 +56,8 @@ const HERO_SLIDES = [
   {
     id: 6,
     serviceId: 'washer-repair',
-    image: '/images/services/washer-repair.jpg',
-    fallback: '/images/services/washer-repair.jpg',
+    image: APP_IMAGES.washer,
+    fallback: APP_IMAGES.washer,
     title: 'Washing Machine Pump & Motor Repair',
     category: 'Laundry Specialists',
     caption: 'Drain pumps, direct-drive motors & heavy-duty suspension balancing.'
@@ -64,8 +65,8 @@ const HERO_SLIDES = [
   {
     id: 7,
     serviceId: 'lg-compressor-replacement',
-    image: '/images/services/lg-compressor.jpg',
-    fallback: '/images/services/lg-compressor.jpg',
+    image: APP_IMAGES.lgCompressor,
+    fallback: APP_IMAGES.lgCompressor,
     title: 'LG Refrigerator Compressor Replacement',
     category: 'Certified Specialty',
     caption: 'Authorized linear compressor extraction, MCU software flash & sealed vacuum charging.'

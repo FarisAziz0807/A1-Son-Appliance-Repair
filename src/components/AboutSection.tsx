@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, CheckCircle2, ShieldCheck, HeartHandshake, Wrench, Award, Sparkles } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/content';
+import aboutTechImg from '../assets/images/about_technician_1787117991979.jpg';
 
 interface AboutSectionProps {
   onOpenBooking: () => void;
@@ -16,14 +17,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-100 bg-slate-100">
               <img
-                src="/images/about/about-technician.jpg"
+                src={aboutTechImg || '/images/about/about-technician.jpg'}
                 alt="A1 & Son Appliance Repair certified technician with tools and equipment in Burien WA"
                 className="w-full h-[460px] object-cover"
-                loading="lazy"
+                loading="eager"
                 referrerPolicy="no-referrer"
-                onError={(e) => {
-                  e.currentTarget.src = '/images/about-team.jpg';
-                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
               

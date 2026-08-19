@@ -1,4 +1,5 @@
 import { ServiceItem, ApplianceType, ReviewItem, GalleryPhoto, FAQItem } from '../types';
+import { APP_IMAGES } from '../assets/images';
 
 export const BUSINESS_INFO = {
   name: 'A1 & Son Appliance Repair',
@@ -32,7 +33,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Evaporator fan motor and condenser fan replacements'
     ],
     commonProblems: ['Not cooling', 'Water pooling underneath', 'Clicking noise from back', 'Ice buildup on coils', 'Ice maker not working'],
-    image: '/images/services/refrigerator-repair.jpg',
+    image: APP_IMAGES.refrigerator,
     badge: 'High Priority Service'
   },
   {
@@ -47,7 +48,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Relay starter, capacitor, and inverter board diagnostics'
     ],
     commonProblems: ['Thawing food', 'Heavy frost on back wall', 'Continuous running motor', 'Clicking starter relay'],
-    image: '/images/services/freezer-repair.jpg',
+    image: APP_IMAGES.freezer,
     badge: 'Fast Emergency Response'
   },
   {
@@ -62,7 +63,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Exhaust airflow safety inspection and lint duct checks'
     ],
     commonProblems: ['No heat while tumbling', 'Drum will not spin', 'Takes 2-3 cycles to dry', 'Squealing/grinding noise', 'Dryer won’t turn on'],
-    image: '/images/services/dryer-repair.webp',
+    image: APP_IMAGES.dryer,
     badge: 'Safety Inspected'
   },
   {
@@ -77,7 +78,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Door hinge springs, latch assemblies, and door glass seal replacement'
     ],
     commonProblems: ['Oven not heating up', 'Gas smell near oven', 'Inaccurate temperature', 'Self-clean latch stuck', 'Uneven baking results'],
-    image: '/images/services/oven-repair.jpg'
+    image: APP_IMAGES.oven
   },
   {
     id: 'stove-cooktop-repair',
@@ -91,7 +92,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Induction power board and touch-sensor glass diagnosis'
     ],
     commonProblems: ['Burner clicking constantly', 'Electric element won’t heat', 'Glass top hot-surface indicator stays on', 'Low gas flame'],
-    image: '/images/services/stove-cooktop-repair.jpg'
+    image: APP_IMAGES.stove
   },
   {
     id: 'washer-repair',
@@ -105,7 +106,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'Door boot gasket seal sanitization and leak prevention'
     ],
     commonProblems: ['Washing machine won’t drain', 'Violent shaking on spin cycle', 'Water leaking onto laundry room floor', 'Door locked shut', 'Clothes soaking wet after cycle'],
-    image: '/images/services/washer-repair.jpg',
+    image: APP_IMAGES.washer,
     badge: 'Same-Day Availability'
   },
   {
@@ -120,7 +121,7 @@ export const SERVICES_LIST: ServiceItem[] = [
       'R134a / R600a precision weigh-in refrigerant recharging'
     ],
     commonProblems: ['LG linear compressor failure', 'Humming noise then silence', 'Freezer at 40°F and fridge at 60°F', 'LG error codes 22 or 67'],
-    image: '/images/services/lg-compressor.jpg',
+    image: APP_IMAGES.lgCompressor,
     badge: 'Certified Specialty Service',
     isSpecialty: true
   }
@@ -130,49 +131,49 @@ export const APPLIANCE_TYPES: ApplianceType[] = [
   {
     id: 'refrigerators',
     name: 'Refrigerators',
-    image: '/images/services/refrigerator-repair.jpg',
+    image: APP_IMAGES.refrigerator,
     description: 'French door, side-by-side, bottom freezer, top mount, compact, and counter-depth models.',
     features: ['Cooling issues', 'Water leaks', 'Ice makers', 'Thermostat faults']
   },
   {
     id: 'freezers',
     name: 'Freezers',
-    image: '/images/services/freezer-repair.jpg',
+    image: APP_IMAGES.freezer,
     description: 'Upright freezers, deep chest freezers, and built-in architectural freezer units.',
     features: ['Excess frost', 'Thawing', 'Starter relays', 'Door gaskets']
   },
   {
     id: 'washing-machines',
     name: 'Washing Machines',
-    image: '/images/services/washer-repair.jpg',
+    image: APP_IMAGES.washer,
     description: 'Front load, top load with agitator, high-efficiency impellers, and all-in-one laundry units.',
     features: ['Drain pumps', 'Spin cycle shake', 'Water valves', 'Door boots']
   },
   {
     id: 'dryers',
     name: 'Dryers',
-    image: '/images/services/dryer-repair.webp',
+    image: APP_IMAGES.dryer,
     description: 'Electric and natural gas dryers, ventless heat pump dryers, and stacked laundry sets.',
     features: ['Heating coils', 'Thermal fuses', 'Drive belts', 'Motor pulleys']
   },
   {
     id: 'ovens',
     name: 'Ovens',
-    image: '/images/services/oven-repair.jpg',
+    image: APP_IMAGES.oven,
     description: 'Single and double wall ovens, drop-in ovens, convection models, and microwave combinations.',
     features: ['Bake elements', 'Gas igniters', 'Control boards', 'Temperature calibration']
   },
   {
     id: 'stoves-cooktops',
     name: 'Stoves & Cooktops',
-    image: '/images/services/stove-cooktop-repair.jpg',
+    image: APP_IMAGES.stove,
     description: 'Freestanding ranges, slide-in ranges, dual-fuel stoves, smooth radiant glass, and gas cooktops.',
     features: ['Gas valves', 'Spark electrodes', 'Surface elements', 'Ignition modules']
   },
   {
     id: 'lg-compressors',
     name: 'LG Compressor Replacement',
-    image: '/images/services/lg-compressor.jpg',
+    image: APP_IMAGES.lgCompressor,
     description: 'Specialized LG linear compressor diagnostics, software updates, and sealed-system repairs.',
     badge: 'Specialized Service',
     features: ['Linear compressors', 'PCB upgrades', 'Dryer filter swap', 'Vacuum recharge']
@@ -185,7 +186,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'refrigeration',
     categoryLabel: 'Refrigerator',
-    image: '/images/services/refrigerator-repair.jpg',
+    image: APP_IMAGES.refrigerator,
     alt: 'Technician performing refrigerator repair and cooling system diagnosis',
     caption: 'Diagnosing cooling loop, evaporator fan, and temperature controls on residential refrigerator.'
   },
@@ -194,7 +195,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Freezer Repair & Temperature Restoration',
     category: 'refrigeration',
     categoryLabel: 'Freezer',
-    image: '/images/services/freezer-repair.jpg',
+    image: APP_IMAGES.freezer,
     alt: 'Freezer repair service, defrost troubleshooting and sealed system repair',
     caption: 'Thawing frost buildup, replacing bi-metal defrost thermostats, and starter relay diagnostics.'
   },
@@ -203,7 +204,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Dryer Repair & Heating Element Replacement',
     category: 'laundry',
     categoryLabel: 'Dryer',
-    image: '/images/services/dryer-repair.webp',
+    image: APP_IMAGES.dryer,
     alt: 'Clothes dryer repair, electrical diagnostics and heating system inspection',
     caption: 'Replacing burnt thermal fuses, heating elements, drum support rollers, and belt tensioners.'
   },
@@ -212,7 +213,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Electric & Gas Oven Repair',
     category: 'cooking',
     categoryLabel: 'Oven',
-    image: '/images/services/oven-repair.jpg',
+    image: APP_IMAGES.oven,
     alt: 'Electric oven bake element and temperature calibration service',
     caption: 'Calibrating electronic oven controls, replacing glow igniters, and installing OEM heating elements.'
   },
@@ -221,7 +222,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Stove & Cooktop Burner / Ignition Repair',
     category: 'cooking',
     categoryLabel: 'Stove & Cooktop',
-    image: '/images/services/stove-cooktop-repair.jpg',
+    image: APP_IMAGES.stove,
     alt: 'Stove and cooktop repair, spark electrode tuning and radiant element diagnostics',
     caption: 'Spark igniter electrode tuning, infinite rotary switch replacement, and glass top inspection.'
   },
@@ -230,7 +231,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'Washer Repair & Drain Pump Service',
     category: 'laundry',
     categoryLabel: 'Washer',
-    image: '/images/services/washer-repair.jpg',
+    image: APP_IMAGES.washer,
     alt: 'Washing machine repair technician fixing motor and water inlet valves',
     caption: 'Drain pump unclogging, direct-drive motor servicing, and suspension rod balancing.'
   },
@@ -239,7 +240,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     title: 'LG Refrigerator Compressor Replacement',
     category: 'specialty',
     categoryLabel: 'LG Specialty',
-    image: '/images/services/lg-compressor.jpg',
+    image: APP_IMAGES.lgCompressor,
     alt: 'Specialized LG linear compressor extraction, brazing, and sealed system replacement',
     caption: 'Authorized LG linear compressor replacement, nitrogen brazing, software MCU flash, and refrigerant recharge.'
   }

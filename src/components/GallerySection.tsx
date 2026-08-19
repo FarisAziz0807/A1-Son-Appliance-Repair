@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { GALLERY_PHOTOS } from '../data/content';
 import { GalleryPhoto } from '../types';
+import { APP_IMAGES } from '../assets/images';
 import { 
   X, 
   ChevronLeft, 
@@ -27,21 +28,21 @@ export const GallerySection: React.FC = () => {
   const getFallbackImage = (photoId: string) => {
     switch (photoId) {
       case 'gal-refrigerator':
-        return '/images/services/refrigerator-repair.jpg';
+        return APP_IMAGES.refrigerator;
       case 'gal-freezer':
-        return '/images/services/freezer-repair.jpg';
+        return APP_IMAGES.freezer;
       case 'gal-dryer':
-        return '/images/services/dryer-repair.webp';
+        return APP_IMAGES.dryer;
       case 'gal-oven':
-        return '/images/services/oven-repair.jpg';
+        return APP_IMAGES.oven;
       case 'gal-stove-cooktop':
-        return '/images/services/stove-cooktop-repair.jpg';
+        return APP_IMAGES.stove;
       case 'gal-washer':
-        return '/images/services/washer-repair.jpg';
+        return APP_IMAGES.washer;
       case 'gal-lg-compressor':
-        return '/images/services/lg-compressor.jpg';
+        return APP_IMAGES.lgCompressor;
       default:
-        return '/images/services/refrigerator-repair.jpg';
+        return APP_IMAGES.refrigerator;
     }
   };
 
