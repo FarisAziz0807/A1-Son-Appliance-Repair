@@ -12,7 +12,7 @@ const HERO_SLIDES = [
     id: 1,
     serviceId: 'refrigerator-repair',
     image: APP_IMAGES.refrigerator,
-    fallback: APP_IMAGES.refrigerator,
+    fallback: APP_IMAGES.fallbacks.refrigerator,
     title: 'Refrigerator Repair & Sealed System Diagnostics',
     category: 'Cooling Specialist',
     caption: 'Compressor diagnostics, refrigerant recharge & cold airflow recovery.'
@@ -21,7 +21,7 @@ const HERO_SLIDES = [
     id: 2,
     serviceId: 'freezer-repair',
     image: APP_IMAGES.freezer,
-    fallback: APP_IMAGES.freezer,
+    fallback: APP_IMAGES.fallbacks.freezer,
     title: 'Freezer & Deep Freeze Precision Repair',
     category: 'Freezer Mechanics',
     caption: 'Frost-free defrost cycles, starter relays & precision thermostat controls.'
@@ -30,7 +30,7 @@ const HERO_SLIDES = [
     id: 3,
     serviceId: 'dryer-repair',
     image: APP_IMAGES.dryer,
-    fallback: APP_IMAGES.dryer,
+    fallback: APP_IMAGES.fallbacks.dryer,
     title: 'Dryer Heating & Tumble Drive Repair',
     category: 'Laundry Specialists',
     caption: 'Thermal fuses, heating coils, rollers & quiet belt replacements.'
@@ -39,7 +39,7 @@ const HERO_SLIDES = [
     id: 4,
     serviceId: 'oven-repair',
     image: APP_IMAGES.oven,
-    fallback: APP_IMAGES.oven,
+    fallback: APP_IMAGES.fallbacks.oven,
     title: 'Electric & Gas Oven Calibration',
     category: 'Cooking Systems',
     caption: 'Dual bake elements, gas safety valves & digital temperature setup.'
@@ -48,7 +48,7 @@ const HERO_SLIDES = [
     id: 5,
     serviceId: 'stove-cooktop-repair',
     image: APP_IMAGES.stove,
-    fallback: APP_IMAGES.stove,
+    fallback: APP_IMAGES.fallbacks.stove,
     title: 'Stove & Cooktop Burner & Igniter Fix',
     category: 'Range Mechanics',
     caption: 'Spark electrodes, infinite burner switches & radiant surface repairs.'
@@ -57,7 +57,7 @@ const HERO_SLIDES = [
     id: 6,
     serviceId: 'washer-repair',
     image: APP_IMAGES.washer,
-    fallback: APP_IMAGES.washer,
+    fallback: APP_IMAGES.fallbacks.washer,
     title: 'Washing Machine Pump & Motor Repair',
     category: 'Laundry Specialists',
     caption: 'Drain pumps, direct-drive motors & heavy-duty suspension balancing.'
@@ -66,7 +66,7 @@ const HERO_SLIDES = [
     id: 7,
     serviceId: 'lg-compressor-replacement',
     image: APP_IMAGES.lgCompressor,
-    fallback: APP_IMAGES.lgCompressor,
+    fallback: APP_IMAGES.fallbacks.lgCompressor,
     title: 'LG Refrigerator Compressor Replacement',
     category: 'Certified Specialty',
     caption: 'Authorized linear compressor extraction, MCU software flash & sealed vacuum charging.'

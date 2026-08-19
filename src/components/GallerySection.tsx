@@ -28,21 +28,21 @@ export const GallerySection: React.FC = () => {
   const getFallbackImage = (photoId: string) => {
     switch (photoId) {
       case 'gal-refrigerator':
-        return APP_IMAGES.refrigerator;
+        return APP_IMAGES.fallbacks.refrigerator;
       case 'gal-freezer':
-        return APP_IMAGES.freezer;
+        return APP_IMAGES.fallbacks.freezer;
       case 'gal-dryer':
-        return APP_IMAGES.dryer;
+        return APP_IMAGES.fallbacks.dryer;
       case 'gal-oven':
-        return APP_IMAGES.oven;
+        return APP_IMAGES.fallbacks.oven;
       case 'gal-stove-cooktop':
-        return APP_IMAGES.stove;
+        return APP_IMAGES.fallbacks.stove;
       case 'gal-washer':
-        return APP_IMAGES.washer;
+        return APP_IMAGES.fallbacks.washer;
       case 'gal-lg-compressor':
-        return APP_IMAGES.lgCompressor;
+        return APP_IMAGES.fallbacks.lgCompressor;
       default:
-        return APP_IMAGES.refrigerator;
+        return APP_IMAGES.fallbacks.refrigerator;
     }
   };
 

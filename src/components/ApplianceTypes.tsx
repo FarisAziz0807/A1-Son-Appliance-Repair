@@ -2,6 +2,7 @@ import React from 'react';
 import { APPLIANCE_TYPES, BRANDS_SERVICED, BUSINESS_INFO } from '../data/content';
 import { CheckCircle2, Wrench, Shield, ChevronRight, Phone } from 'lucide-react';
 import { ApplianceType } from '../types';
+import { APP_IMAGES } from '../assets/images';
 
 interface ApplianceTypesProps {
   onOpenBooking: () => void;
@@ -41,6 +42,25 @@ export const ApplianceTypes: React.FC<ApplianceTypesProps> = ({ onOpenBooking })
                     alt={`${appliance.name} repair in Burien WA`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    referrerPolicy="no-referrer"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      if (appliance.id === 'refrigerators') {
+                        target.src = APP_IMAGES.fallbacks.refrigerator;
+                      } else if (appliance.id === 'freezers') {
+                        target.src = APP_IMAGES.fallbacks.freezer;
+                      } else if (appliance.id === 'washing-machines') {
+                        target.src = APP_IMAGES.fallbacks.washer;
+                      } else if (appliance.id === 'dryers') {
+                        target.src = APP_IMAGES.fallbacks.dryer;
+                      } else if (appliance.id === 'ovens') {
+                        target.src = APP_IMAGES.fallbacks.oven;
+                      } else if (appliance.id === 'stoves-cooktops') {
+                        target.src = APP_IMAGES.fallbacks.stove;
+                      } else if (appliance.id === 'lg-compressors') {
+                        target.src = APP_IMAGES.fallbacks.lgCompressor;
+                      }
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent" />
                   

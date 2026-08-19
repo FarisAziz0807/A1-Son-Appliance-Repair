@@ -75,19 +75,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   onError={(e) => {
                     const target = e.currentTarget;
                     if (service.id === 'refrigerator-repair') {
-                      target.src = APP_IMAGES.refrigerator;
+                      target.src = APP_IMAGES.fallbacks.refrigerator;
                     } else if (service.id === 'freezer-repair') {
-                      target.src = APP_IMAGES.freezer;
+                      target.src = APP_IMAGES.fallbacks.freezer;
                     } else if (service.id === 'dryer-repair') {
-                      target.src = APP_IMAGES.dryer;
+                      target.src = APP_IMAGES.fallbacks.dryer;
                     } else if (service.id === 'oven-repair') {
-                      target.src = APP_IMAGES.oven;
+                      target.src = APP_IMAGES.fallbacks.oven;
                     } else if (service.id === 'stove-cooktop-repair') {
-                      target.src = APP_IMAGES.stove;
+                      target.src = APP_IMAGES.fallbacks.stove;
                     } else if (service.id === 'washer-repair') {
-                      target.src = APP_IMAGES.washer;
+                      target.src = APP_IMAGES.fallbacks.washer;
                     } else if (service.id === 'lg-compressor-replacement') {
-                      target.src = APP_IMAGES.lgCompressor;
+                      target.src = APP_IMAGES.fallbacks.lgCompressor;
                     }
                   }}
                 />
